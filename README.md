@@ -33,7 +33,8 @@ git clone https://github.com/google-ar/sceneform-android-sdk.git
 
 실행 결과
 
-![%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled.png](%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled.png)
+![7](https://user-images.githubusercontent.com/37799862/93163100-37df1580-f751-11ea-90b2-6f262d1a1800.png)
+
 
 ## 외부 에셋으로 모델 바꾸기
 
@@ -41,7 +42,7 @@ git clone https://github.com/google-ar/sceneform-android-sdk.git
 
 Setting > Plugins : Google Sceneform Tools (Beta) 설치
 
-![%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%201.png](%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%201.png)
+![1](https://user-images.githubusercontent.com/37799862/93163057-1a11b080-f751-11ea-85f4-144227aefb22.png)
 
 ### 에셋 가져오기
 
@@ -59,7 +60,7 @@ app 폴더 내부에 **sampledata 폴더**를 만든 후
 
 Wolves.mtl, Wolves.obj 파일을 복사해 붙여넣는다.
 
-![%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%202.png](%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%202.png)
+![2](https://user-images.githubusercontent.com/37799862/93163126-4c231280-f751-11ea-86af-1d73afb53298.png)
 
 res폴더 내부에 raw폴더 만들어 줌
 
@@ -69,13 +70,13 @@ wolves.obj파일에서 오른쪽 클릭 > Import Sceneform Asset
 
 (파일 이름에 대문자가 허용되지 않으므로 소문자로 바꿔줘야함)
 
-![%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%203.png](%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%203.png)
+![3](https://user-images.githubusercontent.com/37799862/93163147-59d89800-f751-11ea-89df-8388b52e2ffb.png)
 
 sfa output 경로는 그대로 두고
 
 sfb 경로만 만들어둔 raw폴더로 변경해준다.
 
-![%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%204.png](%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%204.png)
+![4](https://user-images.githubusercontent.com/37799862/93163157-5fce7900-f751-11ea-948f-75453a667d2b.png)
 
 그러면 obj로부터 해당 경로에 sfa, sfb파일이 만들어진다.
 
@@ -206,7 +207,8 @@ ARCore의 기본 구성을 사용하는 fragment (public class)
 
         매개 변수?
 
-        ![%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%205.png](%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%205.png)
+        ![5](https://user-images.githubusercontent.com/37799862/93163172-65c45a00-f751-11ea-8112-20134ff51da7.png)
+
 
 - **getArSceneview**:
 
@@ -232,7 +234,8 @@ ARCore의 기본 구성을 사용하는 fragment (public class)
 
 - **setSource:**
 
-    ![%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%206.png](%5B%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5%E1%84%83%E1%85%B502%5D%20ARCore%20-%20Sceneform%207ee77f03958547f681beefc030505f73/Untitled%206.png)
+    ![6](https://user-images.githubusercontent.com/37799862/93163203-7a085700-f751-11ea-9c23-de6b4fcfbb09.png)
+
 
     Renderable의 context(this) 에 resource(R.raw.wolves) 값을 준다.
 
