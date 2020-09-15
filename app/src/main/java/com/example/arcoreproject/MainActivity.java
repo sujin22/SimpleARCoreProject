@@ -18,6 +18,7 @@ import com.google.ar.sceneform.ux.TransformableNode;
 public class MainActivity extends AppCompatActivity {
     private ArFragment arFragment;
     private ModelRenderable modelRenderable;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setUpPlane();
     }
 
+    //사용할 모델을 가져옴
     private void setUpModel() {
         ModelRenderable.builder()
                 .setSource(this,R.raw.wolves)
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 Anchor anchor = hitResult.createAnchor();
                 AnchorNode anchorNode = new AnchorNode(anchor);
                 anchorNode.setParent(arFragment.getArSceneView().getScene());
+
                 createModel(anchorNode);
             }
         });
@@ -53,8 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void createModel(AnchorNode anchorNode) {
         TransformableNode node = new TransformableNode(arFragment.getTransformationSystem());
+
         node.setParent(anchorNode);
-        node.setRenderable(modelRenderable);
+        node.setRenderable(modelRenderable);    //렌더링
         node.select();
     }
 
